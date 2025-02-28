@@ -13,7 +13,7 @@ export const POST: APIRoute = async ({ request, cookies, redirect, locals }) => 
 
 	const supabase = createClient(
 		locals.runtime.env.SUPABASE_URL,
-		locals.runtime.env.SUPABASE_ANON_KEY,
+		locals.runtime.env.SUPABASE_KEY,
 	);
 
 

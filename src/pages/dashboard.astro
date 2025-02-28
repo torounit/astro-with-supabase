@@ -12,7 +12,7 @@ if (!accessToken || !refreshToken) {
 
 const supabase = createClient(
 	Astro.locals.runtime.env.SUPABASE_URL,
-	Astro.locals.runtime.env.SUPABASE_ANON_KEY,
+	Astro.locals.runtime.env.SUPABASE_KEY,
 );
 
 let session;
